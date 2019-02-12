@@ -44,9 +44,11 @@ Secure Shell
 
 Updating Security
 -To secure ssh go to etc directory and then to ssh directory and open any editor to update sshd_config file and change the following settings-
-	-change port number to any port no other than 22
-	-copy the public key of your device to the remote device 
-	-remove password authentication
+	
+	1) change port number to any port no other than 22
+	2)copy the public key of your device to the remote device 
+	3)remove password authentication
+
 Chating With ssh
 -To chat using ssh create a file in remote server
 -open that file in an editor in one terminal and open another terminal and type tail -f file_name
@@ -54,7 +56,7 @@ Chating With ssh
 
 Proxy 
 - Change the port number of the remote system to 443
-- open terminal in your device and type this command;
+- open terminal in your device and type this command:
 			ssh -N -D 4444 uname@ip 
 - open your system's browser 
 - go to preferences -> then network settings -> advance -> click on mannual proxy and in SOCKS Host type 127.0.0.1 in ip and 4444 in port
